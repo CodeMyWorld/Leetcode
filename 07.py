@@ -1,5 +1,5 @@
 __author__ = 'alex'
-import  sys
+MAX, MIN = 2147483647, -2147483648
 class Solution(object):
     def reverse(self, x):
         result = 0
@@ -12,7 +12,7 @@ class Solution(object):
             temp = tempData % 10
             result = result * 10 + temp
             tempData /= 10
-        if result > sys.maxint or result < -1 * sys.maxint - 1:
+        if result > MAX or result < MIN:
             return 0
         if x < 0:
             return -1 * result
@@ -21,7 +21,7 @@ class Solution(object):
 
 solution = Solution()
 print solution.reverse(1534236469)
-print sys.maxint
+
 
 
 
