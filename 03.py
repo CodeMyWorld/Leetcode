@@ -35,26 +35,3 @@ class Solution(object):
 solution = Solution()
 print solution.lengthOfLongestSubstring("db!@#$%^&acbvv")
 
-
-
-class Solution2(object):
-    def lengthOfLongestSubstring(self, s):
-        result = 0
-        for out_index in range(len(s)):
-            my_dict = dict()
-            temp_result = 0
-            my_dict[s[out_index]] = 1
-            for in_index in range(out_index+1, len(s)):
-                if s[in_index] in my_dict:
-                    break
-                else:
-                    temp_result += 1
-                    my_dict[s[in_index]] = 1
-            if temp_result > result:
-                result = temp_result
-            my_dict.clear()
-        if s == "":
-            return 0
-        else:
-            return result+1
-
