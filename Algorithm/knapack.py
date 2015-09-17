@@ -1,6 +1,6 @@
 __author__ = 'alex'
 class Solution(object):
-    def knapace(self, value, weight, weight_limit):
+    def knapsack(self, value, weight, weight_limit):
         f = [[0 for j in range(weight_limit+1)] for i in range(len(value)+1)]
         for item in range(1, len(value)+1):
             item_index = item - 1
