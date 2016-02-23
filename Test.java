@@ -3,14 +3,12 @@
  */
 public class Test {
     public static void main(String[] arg) {
-        Solution21 solution21 = new Solution21();
-        ListNode l1 = null;
-        ListNode l2 = new ListNode(0);
-        l2.next = new ListNode(4);
-        ListNode head = solution21.mergeTwoLists(l1,l2);
-        while(head != null){
-            System.out.println(head.val);
-            head = head.next;
-        }
+        Solution35 solution35 = new Solution35();
+        //[1,3,5,6], 5 → 2
+        //[1,3,5,6], 2 → 1
+        //[1,3,5,6], 7 → 4
+        //[1,3,5,6], 0 → 0
+        int[] nums = {1};
+        System.out.println(solution35.searchInsert(nums, 1));
     }
 }
