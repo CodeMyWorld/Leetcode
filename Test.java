@@ -3,9 +3,12 @@
  */
 public class Test {
     public static void main(String[] arg) {
-        String s = "({}[()])";
-        Solution20 solution20 = new Solution20();
-        System.out.println(solution20.isValid(s));
+        Solution26 solution26 = new Solution26();
+        int[] nums = {};
+        System.out.println(solution26.removeDuplicates(nums));
+        for (int num:nums) {
+            System.out.print(num+" ");
+        }
     }
 
 }
