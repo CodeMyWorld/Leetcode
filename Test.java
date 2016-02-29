@@ -3,10 +3,7 @@
  */
 public class Test {
     public static void main(String[] arg) {
-        char[][] board = {{'A','B','C','E'},
-                          {'S','F','E','S'},
-                          {'A','D','E','E'}};
-        Solution79 solution79 = new Solution79();
-        System.out.println(solution79.exist(board, "ABCESEEEFS"));
+        Solution62 solution62 = new Solution62();
+        System.out.println(solution62.uniquePaths(3,2));
     }
 }
