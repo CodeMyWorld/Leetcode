@@ -5,7 +5,7 @@
  */
 public class Test {
     public static void main(String[] arg) {
-        Solution96 solution96 = new Solution96();
-        System.out.println(solution96.numTrees(3));
+        Solution264 solution264 = new Solution264();
+        System.out.println(solution264.nthUglyNumber(1600));
     }
 }
